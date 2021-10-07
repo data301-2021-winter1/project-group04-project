@@ -23,19 +23,19 @@ Some questions we are interested in:
 Yes, we can absolutely see our group turning this into a dashboard. That is one of the reasons we chose this large dataset of superheroes. It is a topic we all have an interest in and we thought could look cool laid out in a dashboard. 
 ## Team Members
 
-- Halle: I'm a 4th year accounting student from Vancouver, BC who loves superheroes.
+- Halle: I am a 4th year accounting student from Vancouver, BC who loves superheroes.
 - Shiobhan: I am a 4th year accounting student from Calgary, AB with no computer knowledge.
 - Mitchell: I am a 4th year accounting student from the NWT, who loves the marvel universe.
 
 ## Images
 
-{You can use this area for any images you want to include}
 
-<img src ="images/test.png" width="100px">
+![Super Accountant](https://res.cloudinary.com/teepublic/image/private/s--E1VwmKil--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_36538b,e_outline:48/co_36538b,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1604275737/production/designs/15653922_0.jpg)
 
 ## References
 
 https://www.kaggle.com/jonathanbesomi/superheroes-nlp-dataset
+
 https://www.superherodb.com/
 
 
