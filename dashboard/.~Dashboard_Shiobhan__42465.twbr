@@ -1,0 +1,1550 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook source-build='2021.3.3 (20213.21.1018.0949)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='cleaned_Shiobhan' inline='true' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_Shiobhan' name='textscan.1yc9j0h0yf49xj10zp2oe0j12ysa'>
+            <connection class='textscan' directory='/Users/shiobhanbohach/school/school/year3/project-group04-project/data/processed' filename='cleaned_Shiobhan.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1yc9j0h0yf49xj10zp2oe0j12ysa' name='cleaned_Shiobhan.csv' table='[cleaned_Shiobhan#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='string' name='real_name' ordinal='2' />
+            <column datatype='string' name='full_name' ordinal='3' />
+            <column datatype='string' name='overall_score' ordinal='4' />
+            <column datatype='integer' name='intelligence_score' ordinal='5' />
+            <column datatype='integer' name='strength_score' ordinal='6' />
+            <column datatype='integer' name='speed_score' ordinal='7' />
+            <column datatype='integer' name='durability_score' ordinal='8' />
+            <column datatype='integer' name='power_score' ordinal='9' />
+            <column datatype='integer' name='combat_score' ordinal='10' />
+            <column datatype='string' name='superpowers' ordinal='11' />
+            <column datatype='string' name='creator' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1yc9j0h0yf49xj10zp2oe0j12ysa' name='cleaned_Shiobhan.csv' table='[cleaned_Shiobhan#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='string' name='real_name' ordinal='2' />
+              <column datatype='string' name='full_name' ordinal='3' />
+              <column datatype='string' name='overall_score' ordinal='4' />
+              <column datatype='integer' name='intelligence_score' ordinal='5' />
+              <column datatype='integer' name='strength_score' ordinal='6' />
+              <column datatype='integer' name='speed_score' ordinal='7' />
+              <column datatype='integer' name='durability_score' ordinal='8' />
+              <column datatype='integer' name='power_score' ordinal='9' />
+              <column datatype='integer' name='combat_score' ordinal='10' />
+              <column datatype='string' name='superpowers' ordinal='11' />
+              <column datatype='string' name='creator' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1yc9j0h0yf49xj10zp2oe0j12ysa' name='cleaned_top12_Shiobhan.csv' table='[cleaned_top12_Shiobhan#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='string' name='real_name' ordinal='2' />
+              <column datatype='string' name='full_name' ordinal='3' />
+              <column datatype='string' name='overall_score' ordinal='4' />
+              <column datatype='integer' name='intelligence_score' ordinal='5' />
+              <column datatype='integer' name='strength_score' ordinal='6' />
+              <column datatype='integer' name='speed_score' ordinal='7' />
+              <column datatype='integer' name='durability_score' ordinal='8' />
+              <column datatype='integer' name='power_score' ordinal='9' />
+              <column datatype='integer' name='combat_score' ordinal='10' />
+              <column datatype='string' name='superpowers' ordinal='11' />
+              <column datatype='string' name='creator' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[F1]' />
+          <map key='[F1]' value='[cleaned_Shiobhan.csv].[F1]' />
+          <map key='[combat_score (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[combat_score]' />
+          <map key='[combat_score]' value='[cleaned_Shiobhan.csv].[combat_score]' />
+          <map key='[creator (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[creator]' />
+          <map key='[creator]' value='[cleaned_Shiobhan.csv].[creator]' />
+          <map key='[durability_score (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[durability_score]' />
+          <map key='[durability_score]' value='[cleaned_Shiobhan.csv].[durability_score]' />
+          <map key='[full_name (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[full_name]' />
+          <map key='[full_name]' value='[cleaned_Shiobhan.csv].[full_name]' />
+          <map key='[intelligence_score (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[intelligence_score]' />
+          <map key='[intelligence_score]' value='[cleaned_Shiobhan.csv].[intelligence_score]' />
+          <map key='[name (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[name]' />
+          <map key='[name]' value='[cleaned_Shiobhan.csv].[name]' />
+          <map key='[overall_score (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[overall_score]' />
+          <map key='[overall_score]' value='[cleaned_Shiobhan.csv].[overall_score]' />
+          <map key='[power_score (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[power_score]' />
+          <map key='[power_score]' value='[cleaned_Shiobhan.csv].[power_score]' />
+          <map key='[real_name (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[real_name]' />
+          <map key='[real_name]' value='[cleaned_Shiobhan.csv].[real_name]' />
+          <map key='[speed_score (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[speed_score]' />
+          <map key='[speed_score]' value='[cleaned_Shiobhan.csv].[speed_score]' />
+          <map key='[strength_score (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[strength_score]' />
+          <map key='[strength_score]' value='[cleaned_Shiobhan.csv].[strength_score]' />
+          <map key='[superpowers (cleaned_top12_Shiobhan.csv)]' value='[cleaned_top12_Shiobhan.csv].[superpowers]' />
+          <map key='[superpowers]' value='[cleaned_Shiobhan.csv].[superpowers]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>real_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[real_name]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>real_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[full_name]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>full_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[overall_score]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>overall_score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intelligence_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[intelligence_score]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>intelligence_score</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>strength_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[strength_score]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>strength_score</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speed_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[speed_score]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>speed_score</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>durability_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[durability_score]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>durability_score</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>power_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[power_score]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>power_score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combat_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[combat_score]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>combat_score</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>superpowers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[superpowers]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>superpowers</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>creator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[creator]</local-name>
+            <parent-name>[cleaned_Shiobhan.csv]</parent-name>
+            <remote-alias>creator</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>real_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[real_name (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>real_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[full_name (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>full_name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[overall_score (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>overall_score</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intelligence_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[intelligence_score (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>intelligence_score</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>strength_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[strength_score (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>strength_score</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speed_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[speed_score (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>speed_score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>durability_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[durability_score (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>durability_score</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>power_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[power_score (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>power_score</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combat_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[combat_score (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>combat_score</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>superpowers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[superpowers (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>superpowers</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>creator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[creator (cleaned_top12_Shiobhan.csv)]</local-name>
+            <parent-name>[cleaned_top12_Shiobhan.csv]</parent-name>
+            <remote-alias>creator</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='F1 (cleaned top12 Shiobhan.csv)' datatype='integer' name='[F1 (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cleaned_Shiobhan.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_Shiobhan.csv_74222EAC955F4A80AAC3C28BF523DE5E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cleaned_top12_Shiobhan.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_top12_Shiobhan.csv_C2CC095B718F4E4BAFF344917718B381]' role='measure' type='quantitative' />
+      <column caption='combat score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[combat_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+      <column caption='Combat Score' datatype='integer' name='[combat_score]' role='measure' type='quantitative' />
+      <column caption='creator (cleaned top12 Shiobhan.csv)' datatype='string' name='[creator (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+      <column caption='Creator' datatype='string' name='[creator]' role='dimension' type='nominal' />
+      <column caption='durability score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[durability_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+      <column caption='Durability Score' datatype='integer' name='[durability_score]' role='measure' type='quantitative' />
+      <column caption='full name (cleaned top12 Shiobhan.csv)' datatype='string' name='[full_name (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+      <column caption='Full Name' datatype='string' name='[full_name]' role='dimension' type='nominal' />
+      <column caption='intelligence score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[intelligence_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+      <column caption='Intelligence Score' datatype='integer' name='[intelligence_score]' role='measure' type='quantitative' />
+      <column caption='name (cleaned top12 Shiobhan.csv)' datatype='string' name='[name (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='overall score (cleaned top12 Shiobhan.csv)' datatype='string' name='[overall_score (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+      <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+      <column caption='power score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[power_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+      <column caption='Power Score' datatype='integer' name='[power_score]' role='measure' type='quantitative' />
+      <column caption='real name (cleaned top12 Shiobhan.csv)' datatype='string' name='[real_name (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+      <column caption='Real Name' datatype='string' name='[real_name]' role='dimension' type='nominal' />
+      <column caption='speed score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[speed_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+      <column caption='Speed Score' datatype='integer' name='[speed_score]' role='measure' type='quantitative' />
+      <column caption='strength score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[strength_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+      <column caption='Strength Score' datatype='integer' name='[strength_score]' role='measure' type='quantitative' />
+      <column caption='superpowers (cleaned top12 Shiobhan.csv)' datatype='string' name='[superpowers (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+      <column caption='Superpowers' datatype='string' name='[superpowers]' role='dimension' type='nominal' />
+      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[combat_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:combat_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[combat_score]' derivation='Sum' name='[sum:combat_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[durability_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:durability_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[durability_score]' derivation='Sum' name='[sum:durability_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[intelligence_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:intelligence_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[intelligence_score]' derivation='Sum' name='[sum:intelligence_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[power_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:power_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[power_score]' derivation='Sum' name='[sum:power_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[speed_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:speed_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[speed_score]' derivation='Sum' name='[sum:speed_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[strength_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:strength_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[strength_score]' derivation='Sum' name='[sum:strength_score:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Name,Overall Score)' hidden='true' name='[Action (Name,Overall Score)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[name]' />
+          <groupfilter function='level-members' level='[overall_score]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (name (cleaned top12 Shiobhan.csv),Overall Score)' hidden='true' name='[Action (name (cleaned top12 Shiobhan.csv),Overall Score)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[name (cleaned_top12_Shiobhan.csv)]' />
+          <groupfilter function='level-members' level='[overall_score]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:combat_score:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:power_score:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:intelligence_score:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:power_score (cleaned_top12_Shiobhan.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:speed_score (cleaned_top12_Shiobhan.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:durability_score (cleaned_top12_Shiobhan.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:strength_score:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:intelligence_score (cleaned_top12_Shiobhan.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:F1:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:speed_score:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:strength_score (cleaned_top12_Shiobhan.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:durability_score:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:combat_score (cleaned_top12_Shiobhan.csv):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cleaned_Shiobhan.csv' id='cleaned_Shiobhan.csv_74222EAC955F4A80AAC3C28BF523DE5E'>
+            <properties context=''>
+              <relation connection='textscan.1yc9j0h0yf49xj10zp2oe0j12ysa' name='cleaned_Shiobhan.csv' table='[cleaned_Shiobhan#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='string' name='real_name' ordinal='2' />
+                  <column datatype='string' name='full_name' ordinal='3' />
+                  <column datatype='string' name='overall_score' ordinal='4' />
+                  <column datatype='integer' name='intelligence_score' ordinal='5' />
+                  <column datatype='integer' name='strength_score' ordinal='6' />
+                  <column datatype='integer' name='speed_score' ordinal='7' />
+                  <column datatype='integer' name='durability_score' ordinal='8' />
+                  <column datatype='integer' name='power_score' ordinal='9' />
+                  <column datatype='integer' name='combat_score' ordinal='10' />
+                  <column datatype='string' name='superpowers' ordinal='11' />
+                  <column datatype='string' name='creator' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='cleaned_top12_Shiobhan.csv' id='cleaned_top12_Shiobhan.csv_C2CC095B718F4E4BAFF344917718B381'>
+            <properties context=''>
+              <relation connection='textscan.1yc9j0h0yf49xj10zp2oe0j12ysa' name='cleaned_top12_Shiobhan.csv' table='[cleaned_top12_Shiobhan#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='string' name='real_name' ordinal='2' />
+                  <column datatype='string' name='full_name' ordinal='3' />
+                  <column datatype='string' name='overall_score' ordinal='4' />
+                  <column datatype='integer' name='intelligence_score' ordinal='5' />
+                  <column datatype='integer' name='strength_score' ordinal='6' />
+                  <column datatype='integer' name='speed_score' ordinal='7' />
+                  <column datatype='integer' name='durability_score' ordinal='8' />
+                  <column datatype='integer' name='power_score' ordinal='9' />
+                  <column datatype='integer' name='combat_score' ordinal='10' />
+                  <column datatype='string' name='superpowers' ordinal='11' />
+                  <column datatype='string' name='creator' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[name]' />
+              <expression op='[name (cleaned_top12_Shiobhan.csv)]' />
+            </expression>
+            <first-end-point object-id='cleaned_Shiobhan.csv_74222EAC955F4A80AAC3C28BF523DE5E' />
+            <second-end-point object-id='cleaned_top12_Shiobhan.csv_C2CC095B718F4E4BAFF344917718B381' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+      <datasources>
+        <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+        <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+        <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter from='&quot;∞&quot;' function='range' level='[none:overall_score:nk]' to='&quot;34&quot;' />
+          <groupfilter from='&quot;38&quot;' function='range' level='[none:overall_score:nk]' to='&quot;9&quot;' />
+        </groupfilter>
+        <target field='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_DF0C9B7BE28F48DA8307FDD9CAC42AD7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='avengers' type='sheet' worksheet='Summary Overall Scores' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='avengers' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_B42F0252797C480D9361DD72D7549D5F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='avengers' type='sheet' worksheet='Top 12 Superheroes' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='avengers' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Lowest Overall Scores'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column caption='Combat Score' datatype='integer' name='[combat_score]' role='measure' type='quantitative' />
+            <column caption='Durability Score' datatype='integer' name='[durability_score]' role='measure' type='quantitative' />
+            <column caption='Intelligence Score' datatype='integer' name='[intelligence_score]' role='measure' type='quantitative' />
+            <column caption='name (cleaned top12 Shiobhan.csv)' datatype='string' name='[name (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column caption='Power Score' datatype='integer' name='[power_score]' role='measure' type='quantitative' />
+            <column caption='Speed Score' datatype='integer' name='[speed_score]' role='measure' type='quantitative' />
+            <column caption='Strength Score' datatype='integer' name='[strength_score]' role='measure' type='quantitative' />
+            <column-instance column='[combat_score]' derivation='Sum' name='[sum:combat_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[durability_score]' derivation='Sum' name='[sum:durability_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[intelligence_score]' derivation='Sum' name='[sum:intelligence_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[power_score]' derivation='Sum' name='[sum:power_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[speed_score]' derivation='Sum' name='[sum:speed_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[strength_score]' derivation='Sum' name='[sum:strength_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:combat_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:durability_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:intelligence_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:power_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:speed_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:strength_score:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Action (name (cleaned top12 Shiobhan.csv),Overall Score)]'>
+            <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action2_CDD5D41A95EF42DEB928F63F48D89A37]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[overall_score]' member='&quot;18&quot;' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[name (cleaned_top12_Shiobhan.csv)]' member='&quot;General Zod&quot;' />
+                  <groupfilter function='member' level='[name (cleaned_top12_Shiobhan.csv)]' member='&quot;Shazam (DCEU)&quot;' />
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[name (cleaned_top12_Shiobhan.csv)]' />
+                <hierarchy name='[overall_score]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]</column>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Action (name (cleaned top12 Shiobhan.csv),Overall Score)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk] / ([federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:name:nk] / [federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]))</rows>
+        <cols>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{6334D3F8-895E-4262-AD83-11E2EA6DBB67}' />
+    </worksheet>
+    <worksheet name='Overall / Durability'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column caption='Durability Score' datatype='integer' name='[durability_score]' role='measure' type='quantitative' />
+            <column caption='name (cleaned top12 Shiobhan.csv)' datatype='string' name='[name (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column-instance column='[durability_score]' derivation='Sum' name='[sum:durability_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Action (name (cleaned top12 Shiobhan.csv),Overall Score)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_B42F0252797C480D9361DD72D7549D5F]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[name (cleaned_top12_Shiobhan.csv)]' />
+              <groupfilter function='level-members' level='[overall_score]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Action (name (cleaned top12 Shiobhan.csv),Overall Score)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:durability_score:qk]' />
+              <text column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{04A8A5F5-063E-4636-8E92-98316772936B}' />
+    </worksheet>
+    <worksheet name='Overall / Speed'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column caption='Speed Score' datatype='integer' name='[speed_score]' role='measure' type='quantitative' />
+            <column-instance column='[speed_score]' derivation='Sum' name='[sum:speed_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:speed_score:qk]' />
+              <text column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#edc948' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{175579EF-7CD1-4BA0-A1D3-E1E1A1201671}' />
+    </worksheet>
+    <worksheet name='Summary Overall Scores'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column caption='Combat Score' datatype='integer' name='[combat_score]' role='measure' type='quantitative' />
+            <column caption='Durability Score' datatype='integer' name='[durability_score]' role='measure' type='quantitative' />
+            <column caption='Intelligence Score' datatype='integer' name='[intelligence_score]' role='measure' type='quantitative' />
+            <column caption='name (cleaned top12 Shiobhan.csv)' datatype='string' name='[name (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column caption='Power Score' datatype='integer' name='[power_score]' role='measure' type='quantitative' />
+            <column caption='Speed Score' datatype='integer' name='[speed_score]' role='measure' type='quantitative' />
+            <column caption='Strength Score' datatype='integer' name='[strength_score]' role='measure' type='quantitative' />
+            <column-instance column='[combat_score]' derivation='Sum' name='[sum:combat_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[durability_score]' derivation='Sum' name='[sum:durability_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[intelligence_score]' derivation='Sum' name='[sum:intelligence_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[power_score]' derivation='Sum' name='[sum:power_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[speed_score]' derivation='Sum' name='[sum:speed_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[strength_score]' derivation='Sum' name='[sum:strength_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:combat_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:intelligence_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:speed_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:durability_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:power_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:strength_score:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:combat_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:intelligence_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:speed_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:durability_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:power_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:strength_score:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Action (name (cleaned top12 Shiobhan.csv),Overall Score)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_B42F0252797C480D9361DD72D7549D5F]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[name (cleaned_top12_Shiobhan.csv)]' />
+              <groupfilter function='level-members' level='[overall_score]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]</column>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Action (name (cleaned top12 Shiobhan.csv),Overall Score)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Multiple Values]</rows>
+        <cols>([federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk] / ([federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:name:nk] / [federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{2AC69262-7777-4930-B47F-10D61F5C34CB}' />
+    </worksheet>
+    <worksheet name='Top 12 Superheroes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column caption='combat score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[combat_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+            <column caption='durability score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[durability_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+            <column caption='intelligence score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[intelligence_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+            <column caption='name (cleaned top12 Shiobhan.csv)' datatype='string' name='[name (cleaned_top12_Shiobhan.csv)]' role='dimension' type='nominal' />
+            <column-instance column='[name (cleaned_top12_Shiobhan.csv)]' derivation='None' name='[none:name (cleaned_top12_Shiobhan.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column caption='power score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[power_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+            <column caption='speed score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[speed_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+            <column caption='strength score (cleaned top12 Shiobhan.csv)' datatype='integer' name='[strength_score (cleaned_top12_Shiobhan.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[combat_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:combat_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[durability_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:durability_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[intelligence_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:intelligence_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[power_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:power_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[speed_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:speed_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[strength_score (cleaned_top12_Shiobhan.csv)]' derivation='Sum' name='[sum:strength_score (cleaned_top12_Shiobhan.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:combat_score (cleaned_top12_Shiobhan.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:durability_score (cleaned_top12_Shiobhan.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:intelligence_score (cleaned_top12_Shiobhan.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:power_score (cleaned_top12_Shiobhan.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:speed_score (cleaned_top12_Shiobhan.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:strength_score (cleaned_top12_Shiobhan.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]</column>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[Multiple Values]</rows>
+        <cols>([federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk] / ([federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:name (cleaned_top12_Shiobhan.csv):nk] / [federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{CCF00D02-36F8-4176-9DC5-F9DF4B1DD72C}' />
+    </worksheet>
+    <worksheet name='overall/combat'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column caption='Combat Score' datatype='integer' name='[combat_score]' role='measure' type='quantitative' />
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column-instance column='[combat_score]' derivation='Sum' name='[sum:combat_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:combat_score:qk]' />
+              <text column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7F397D60-A598-4D1D-9EBC-71D04D8396AE}' />
+    </worksheet>
+    <worksheet name='overall/intelligence'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column caption='Intelligence Score' datatype='integer' name='[intelligence_score]' role='measure' type='quantitative' />
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column-instance column='[intelligence_score]' derivation='Sum' name='[sum:intelligence_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:intelligence_score:qk]' />
+              <text column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7CDE6A64-78D8-4DB8-997D-11B2F4B84854}' />
+    </worksheet>
+    <worksheet name='overall/power'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column caption='Power Score' datatype='integer' name='[power_score]' role='measure' type='quantitative' />
+            <column-instance column='[power_score]' derivation='Sum' name='[sum:power_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:power_score:qk]' />
+              <text column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EA8763D5-AAD9-462A-86B3-AA37471CE435}' />
+    </worksheet>
+    <worksheet name='overall/strength'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+            <column caption='Strength Score' datatype='integer' name='[strength_score]' role='measure' type='quantitative' />
+            <column-instance column='[strength_score]' derivation='Sum' name='[sum:strength_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[sum:strength_score:qk]' />
+              <text column='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{02D1FB52-07FD-4CDB-AEDB-4117880E2775}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='avengers'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='cleaned_Shiobhan' name='federated.1ogfqgp0u6mv3117dgn540uy29mn' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ogfqgp0u6mv3117dgn540uy29mn'>
+        <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:nk]' pivot='key' type='nominal' />
+        <column caption='Overall Score' datatype='string' name='[overall_score]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97328' id='14' param='horz' type-v2='layout-flow' w='98504' x='748' y='1336'>
+            <zone h='97328' id='12' param='horz' type-v2='layout-flow' w='83537' x='748' y='1336'>
+              <zone h='97328' id='7' param='horz' type-v2='layout-flow' w='83537' x='748' y='1336'>
+                <zone h='97328' id='5' type-v2='layout-basic' w='83537' x='748' y='1336'>
+                  <zone h='55592' id='3' name='Top 12 Superheroes' w='41769' x='42516' y='1336'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='55592' id='10' name='Summary Overall Scores' w='41768' x='748' y='1336'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41736' id='16' name='Overall / Speed' w='13097' x='748' y='56928'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41736' id='17' name='Overall / Durability' w='20885' x='63400' y='56928'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41736' id='18' name='overall/combat' w='10442' x='32074' y='56928'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41736' id='19' name='overall/intelligence' w='10442' x='42516' y='56928'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41736' id='20' name='overall/power' w='18229' x='13845' y='56928'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41736' id='21' name='overall/strength' w='10442' x='52958' y='56928'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97328' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='14967' x='84285' y='1336'>
+              <zone h='8682' id='15' mode='checkdropdown' name='Top 12 Superheroes' param='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[none:overall_score:nk]' type-v2='filter' values='database' w='14967' x='84285' y='1336'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{35A8C001-B266-4F93-8A17-DCA0EFCB394C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='avengers'>
+      <viewpoints>
+        <viewpoint name='Overall / Durability' />
+        <viewpoint name='Overall / Speed' />
+        <viewpoint name='Summary Overall Scores' />
+        <viewpoint name='Top 12 Superheroes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='overall/combat' />
+        <viewpoint name='overall/intelligence'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='overall/power'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='overall/strength' />
+      </viewpoints>
+      <active id='21' />
+      <simple-id uuid='{5F36A710-E6EC-41A7-88B7-5D1297001F02}' />
+    </window>
+    <window class='worksheet' name='Summary Overall Scores'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD6BB04E-2B94-49A3-8A0F-20382030A8EC}' />
+    </window>
+    <window class='worksheet' name='Top 12 Superheroes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='31' type='pages' />
+            <card size='46' type='filters' />
+            <card size='186' type='marks' />
+            <card size='162' type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FEEC25DE-E850-48E5-AAD4-9F7B07787724}' />
+    </window>
+    <window class='worksheet' name='Lowest Overall Scores'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ogfqgp0u6mv3117dgn540uy29mn].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1815BDF2-1714-49C6-9E39-B591CC32A3C6}' />
+    </window>
+    <window class='worksheet' name='overall/combat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{11993174-15AC-4D78-8038-15E7D4513578}' />
+    </window>
+    <window class='worksheet' name='Overall / Durability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{67317008-56E2-400C-894D-640BE1278EAF}' />
+    </window>
+    <window class='worksheet' name='overall/intelligence'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2EF03C5D-5869-4ABF-B80D-8CA91D216673}' />
+    </window>
+    <window class='worksheet' name='overall/power'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1E7318B-AB82-4111-AA1A-0B18D7E66A28}' />
+    </window>
+    <window class='worksheet' name='Overall / Speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{763C2C3D-94D7-4C0E-9065-AD58DA9FF25D}' />
+    </window>
+    <window class='worksheet' name='overall/strength'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA6945A3-747F-4F69-9454-B52B32C21DBA}' />
+    </window>
+  </windows>
+</workbook>
