@@ -12,6 +12,7 @@ def clean_data(mcu1):
         )    
     return mcu1
 
+
 def process_wrangle_data(dfp):
     sum_column = mcu1["intelligence_score"] + mcu1["strength_score"]
     mcu1["intelligence_strength_sum"] = sum_column 
